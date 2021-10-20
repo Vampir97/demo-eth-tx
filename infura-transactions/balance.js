@@ -12,10 +12,10 @@ async function main() {
   console.log(`Signer public address: ${signer.address}`);
 
   // Check your existing ITX balance
-  // balance is added by sending eth to the deposit address: 0x015C7C7A7D65bbdb117C573007219107BD7486f9
+  // balance is added by sending eth to the deposit address: 0x422cd06a75fe397aecc460245adb0fd564cd4960
   // balance is deducted everytime you send a relay transaction
-  const { balance } = await itx.send("relay_getBalance", [signer.address]);
-  console.log(`Current ITX balance: ` + ethers.utils.formatEther(balance));
+  const { balance  } = await itx.send("relay_getBalance", [signer.address]);
+  console.log(`Current ITX balance: ` +2.4 ethers.utils.formatEther(balance));
 }
 
 require("dotenv").config();
